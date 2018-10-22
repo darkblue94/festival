@@ -1,0 +1,10 @@
+C:\Users\gomez\Desktop\c #\FestiFind\bin\Debug\netcoreapp2.0\FestiFind.deps.json
+C:\Users\gomez\Desktop\c #\FestiFind\bin\Debug\netcoreapp2.0\FestiFind.runtimeconfig.json
+C:\Users\gomez\Desktop\c #\FestiFind\bin\Debug\netcoreapp2.0\FestiFind.runtimeconfig.dev.json
+C:\Users\gomez\Desktop\c #\FestiFind\bin\Debug\netcoreapp2.0\FestiFind.dll
+C:\Users\gomez\Desktop\c #\FestiFind\bin\Debug\netcoreapp2.0\FestiFind.pdb
+C:\Users\gomez\Desktop\c #\FestiFind\obj\Debug\netcoreapp2.0\FestiFind.csproj.CoreCompileInputs.cache
+C:\Users\gomez\Desktop\c #\FestiFind\obj\Debug\netcoreapp2.0\FestiFind.AssemblyInfoInputs.cache
+C:\Users\gomez\Desktop\c #\FestiFind\obj\Debug\netcoreapp2.0\FestiFind.AssemblyInfo.cs
+C:\Users\gomez\Desktop\c #\FestiFind\obj\Debug\netcoreapp2.0\FestiFind.dll
+C:\Users\gomez\Desktop\c #\FestiFind\obj\Debug\netcoreapp2.0\FestiFind.pdb

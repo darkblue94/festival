@@ -1,0 +1,294 @@
+﻿
+*{
+    
+    border-radius: 20px;
+    letter-spacing: 3px;
+    font-family:monospace;
+    
+}
+.container{
+    height:1200px;
+    width:800px;
+    background-color: #2f2f2f;
+    color:#E1C829;
+    text-align: center;
+    padding:50px;
+    border:4px solid #1E023F;
+    
+    
+}
+
+
+span{
+    color:#E1C829;
+    font-size: 20px;
+}
+
+.content{
+    height:400px;
+    width:340px;
+    background-color: #2FB5F3;
+    display:inline-block;
+    padding:15px;
+    vertical-align: top;
+    border:4px solid #1E023F;
+    
+    
+}
+
+#title h1{
+    
+    letter-spacing:20px; 
+        animation-name: rainbow;
+        animation-duration: 6s;
+         animation-iteration-count: infinite;
+    font-size: 25px;
+    
+}
+
+
+
+
+
+button{
+    background: transparent;
+    border:none;
+}
+
+button:hover{
+    background: rgb(255, 255, 255);
+
+    
+}
+button:focus {
+    outline: 0;
+}
+
+img{
+    height:75px;
+    width:75px;
+}
+img:hover {
+    height: 90px;
+    width: 90px;
+}
+#icon-row{
+    
+     padding:0px;
+     width:25%;
+     display: inline-block;
+       position: absolute;
+       left: 80px;
+
+
+}
+
+#content-row{
+       
+        padding:0px;
+        width:25%;
+        display: inline-block;
+    
+}
+#section-1 {
+    background-color: #E1C829;
+    height: 150px;
+    width: 300px;
+    overflow: scroll;
+    padding: 50px;
+    border-radius: 0px 20px 0px 20px ; 
+    box-shadow: 2.5px 5px #1E023F;
+    color:white;
+    margin-bottom: 10px;
+
+}
+
+#section-1::-webkit-scrollbar {
+    width: 10px;
+}
+
+#section-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#section-1::-webkit-scrollbar-thumb {
+    background-color:#2f2f2f;
+    outline: 3px solid slategrey;
+}
+
+#section-1 p{
+    color:black;
+}
+
+
+#section-2 {
+    background-color: #2FB5F3;
+    height: 150px;
+    width: 300px;
+    overflow: scroll;
+    padding: 50px;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 2.5px 5px #1E023F;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+#section-2::-webkit-scrollbar {
+    width: 10px;
+}
+
+#section-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#section-2::-webkit-scrollbar-thumb {
+    background-color: #2f2f2f;
+    outline: 3px solid slategrey;
+}
+
+#section-2 p {
+    color: black;
+}
+#section-3 {
+    background-color:#FF6EC7;
+    height: 150px;
+    width: 300px;
+    overflow: scroll;
+    padding: 50px;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 2.5px 5px #1E023F;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+#section-3::-webkit-scrollbar {
+    width: 10px;
+}
+
+#section-3::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#section-3::-webkit-scrollbar-thumb {
+    background-color: #2f2f2f;
+    outline: 3px solid slategrey;
+}
+
+#section-3 p {
+    color: black;
+}
+
+#section-4 {
+    background-color: #18DD00;
+    height: 150px;
+    width: 300px;
+    overflow: scroll;
+    padding: 50px;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 2.5px 5px #1E023F;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+#section-4::-webkit-scrollbar {
+    width: 10px;
+}
+
+#section-4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#section-4::-webkit-scrollbar-thumb {
+    background-color: #2f2f2f;
+    outline: 3px solid slategrey;
+}
+
+#section-4 p {
+    color: black;
+}
+
+#tribe-map{
+    background-color: white;
+    height:300px;
+    width:300px;
+}
+
+#tribe-map img{
+    height:75%;
+    width:75%;
+}
+
+#festivals{
+    height:170px;
+    width:330px;
+    background: red;
+    overflow: scroll;
+    display: grid-flex;
+    
+    
+}
+
+#festivals::-webkit-scrollbar {
+    width: 10px;
+}
+
+#festivals::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#festivals::-webkit-scrollbar-thumb {
+    background-color: #2f2f2f;
+    outline: 3px solid slategrey;
+}
+
+
+
+.box{
+    background:#2f2f2f;
+    color:#E1C829;
+    height:60px;
+    width:60px;
+    text-align: center;
+    
+    display: inline-grid;
+    position: relative;
+}
+
+
+
+.allfest a:hover{
+    color:white;
+}
+ .allfest{
+     width:200px;
+     background: #2f2f2f;
+     height:20px;
+     margin-left:55px;
+ }
+
+
+
+ .n{
+     background:red;
+ }
+
+@keyframes rainbow {
+    0% {
+        color:#E1C829;
+    }
+
+    25% {
+        color:#2FB5F3;
+    }
+
+    50% {
+        color:#18DD00;
+    }
+
+    100% {
+        color: #FF6EC7;
+    }
+}

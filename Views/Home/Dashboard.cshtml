@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="~/css/index.css?v=5">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+<title>Dashboard</title>
+<script>
+    $(document).ready(function () {
+
+        $("#section-1").hide();
+        $("#section-2").hide();
+        $("#section-3").hide();
+        $("#section-4").hide();
+        
+
+
+        $("#user").click(function () {
+            $("#section-1").toggle(2000);
+
+            $("#section-2").hide();
+            $("#section-3").hide();
+            $("#section-4").hide();
+           
+        });
+
+        $("#tribe").click(function () {
+            $("#section-2").toggle(2000);
+            $("#section-1").hide();
+
+            $("#section-3").hide();
+            $("#section-4").hide();
+        });
+
+        $("#map").click(function () {
+            $("#section-3").toggle(2000);
+            $("#section-1").hide();
+            $("#section-2").hide();
+
+            $("#section-4").hide();
+        });
+
+        $("#music").click(function(){
+            $("#section-4").toggle(2000);
+            $("#section-1").hide();
+            $("#section-2").hide();
+            $("#section-3").hide();
+
+        })
+
+    })
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+        <h1 style="color:#18DD00">FESTI<span>FIND</span></h1>
+        </div>
+        @model User
+
+        <div id="icon-row">
+            <p> @Model.FirstName @Model.LastName</p>
+            <button type="button" id="user"><img src="~/images/user.png"></button>
+            <p>My Tribe</p>
+            <button type="button" id="tribe"><img src="~/images/tribe.png"></button>
+            <p>Map</p>
+            <button type="button" id="map"><img src="~/images/map.png"></button>
+            <p>Music</p>
+            <button type="button" id="music"><img src="~/images/music.png"></button>
+        </div>
+
+    <div id="content-row">
+
+            <div id="section-1">
+                <h1> My UserName</h1>
+                <p> @Model.FirstName @Model.LastName</p>
+                <h2>Festival I Am At</h2>
+                <p> Ultra Music Festival</p>
+                <h3>My Tribe Name </h3>
+                <p>The Sleeping Owls</p>
+
+            </div>
+            <div id="section-2">
+                <h1>My Tribe Name </h1>
+                <p>The Sleeping Owls</p>
+                <h2>MeetingSpot</h2>
+            <div id = "tribe-map"> 
+            <h2> A MAP SHOWING WHERE ALL YOUR TRIBE MEMBERS ARE ( LIVE GOOGLE GPS API )</h2>
+            <img src="~/images/example.jpg">
+            </div>
+        <h3>TribeMembers</h3>
+            <p>Person 1 </p>
+            <p>Person 2 </p>
+            <p>Person 3 </p>
+            <p>Person 4 </p>
+
+            </div>
+        <div id="section-3">
+            <h1> HERE WILL BE A MAP OF THE WHOLE FESTIAL</h1>
+            <h3> WITH INTERACTIVE ICONS FOR BATHROOMS, FOOD VENDORS</h3>
+            <h1> Live Set Time Updates AND Body Traffic Count around a stage</h1>
+
+        </div>
+        <div id="section-4">
+            <h1> SPOTIFY LINKS to ARIST PERFORMING AT THE FESTIVAL</h1>
+            <h3> Artist Profiles and music</h3>
+            <h4> Bio on bands and acts </h4>
+            <h3> Links to there social media </h3>
+        </div>
+<div id="festivals">
+    <h1> FESTIVALS THIS WEEK</h1>
+    
+    <div class="box"><p>Red Hot Chilli Peppers</p></div>
+    
+    <div class="box"><p>J Cole</p></div>
+    
+    <div class="box"><p>Michael Kiwanuka</p></div>
+    <div class="box"><p>Jack White</p></div>
+    <div class="box"><p> Gorillaz </p></div>
+    <div class="box"><p>The Rolling Stones</p></div>
+    <div class="box"><p>Oz Fest</p></div>
+    <div class="allfest">
+    <a href="">ALL FESTIVALS</a>
+    </div>
+    
+
+</div>
+
+        
+        
+    </div>
+       
+
+
+
+
+    </div>
+</body>
+</html>
