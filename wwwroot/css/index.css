@@ -8,14 +8,30 @@
 }
 .container{
     height:1200px;
-    width:800px;
-    background-color: #2f2f2f;
+    width:100%;
+    background-color: #302d2d;
     color:#E1C829;
     text-align: center;
     padding:50px;
     border:4px solid #1E023F;
     
     
+}
+
+#nav{
+    height:20px;
+    width:100%;
+    word-spacing: 20px;
+    
+    
+}
+#nav a{
+    color:#E1C829;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color:whitesmoke;
 }
 
 
@@ -65,8 +81,8 @@ button:focus {
 }
 
 img{
-    height:75px;
-    width:75px;
+    height:100px;
+    width:100px;
 }
 img:hover {
     height: 90px;
@@ -90,10 +106,14 @@ img:hover {
         display: inline-block;
     
 }
+
+#info{
+    font-size: 20px;
+}
 #section-1 {
     background-color: #E1C829;
     height: 150px;
-    width: 300px;
+    width: 100%;
     overflow: scroll;
     padding: 50px;
     border-radius: 0px 20px 0px 20px ; 
@@ -124,7 +144,7 @@ img:hover {
 #section-2 {
     background-color: #2FB5F3;
     height: 150px;
-    width: 300px;
+    width: 100%;
     overflow: scroll;
     padding: 50px;
     border-radius: 0px 20px 0px 20px;
@@ -153,7 +173,7 @@ img:hover {
 #section-3 {
     background-color:#FF6EC7;
     height: 150px;
-    width: 300px;
+     width: 100%;
     overflow: scroll;
     padding: 50px;
     border-radius: 0px 20px 0px 20px;
@@ -183,7 +203,7 @@ img:hover {
 #section-4 {
     background-color: #18DD00;
     height: 150px;
-    width: 300px;
+    width: 100%;
     overflow: scroll;
     padding: 50px;
     border-radius: 0px 20px 0px 20px;
@@ -222,8 +242,8 @@ img:hover {
 }
 
 #festivals{
-    height:170px;
-    width:330px;
+    height:200px;
+    width: 100%;
     background: red;
     overflow: scroll;
     display: grid-flex;
@@ -244,6 +264,19 @@ img:hover {
     outline: 3px solid slategrey;
 }
 
+#location-button{
+    padding:50px;
+}
+
+#location-button img{
+    height:20px;
+    width:20px;
+    
+}
+#location-button:hover {
+    background:transparent;
+
+}
 
 
 .box{
@@ -263,7 +296,7 @@ img:hover {
     color:white;
 }
  .allfest{
-     width:200px;
+     width:70%;
      background: #2f2f2f;
      height:20px;
      margin-left:55px;

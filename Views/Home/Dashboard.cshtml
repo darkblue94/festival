@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" type="text/css" href="~/css/index.css?v=5">
+<link rel="stylesheet" type="text/css" href="~/css/index.css?v=10">
 
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
@@ -52,8 +52,28 @@
             $("#section-3").hide();
 
         })
+    var x = document.getElementById("info");
+        $("#location-button").click(function(){
+            if(navigator.geolocation)
+            navigator.geolocation.getCurrentPosition(showPosition)
+            {
+                console.log(position);
+                
+               
+                };
 
-    })
+                
+
+                function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+            });
+       
+
+        });
+
+    
 </script>
 
 </head>
@@ -62,8 +82,18 @@
         <div id="title">
         <h1 style="color:#18DD00">FESTI<span>FIND</span></h1>
         </div>
+        <div id="nav">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="/logout">LogOut</a>
+        </div>
+        <p id="info"></p>
         @model User
-
+        <div id="wrapper">
+            <button onclick="" id="location-button" ><img src="~/images/locate.png"></button>
+            <div id="output"></div>
+        </div>
+        
         <div id="icon-row">
             <p> @Model.FirstName @Model.LastName</p>
             <button type="button" id="user"><img src="~/images/user.png"></button>
@@ -95,6 +125,7 @@
             <img src="~/images/example.jpg">
             </div>
         <h3>TribeMembers</h3>
+        <a href="/all_users"
             <p>Person 1 </p>
             <p>Person 2 </p>
             <p>Person 3 </p>

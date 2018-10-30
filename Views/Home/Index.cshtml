@@ -16,12 +16,18 @@
 
 
         }
+        #container {
+        width:75%;
+        height:50%;
+        padding:100px;
+        }
 
         span {
             color: yellow;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-;
             font-size: 6px;
         }
+      
 
         input {
             grid: 30px;
@@ -31,13 +37,15 @@
             text-align: center;
             color:#18DD00;
             font-size:16px;
+            width:55%;
         }
     </style>
     <title>Register</title>
 </head>
 
 <body>
-
+<div id="container">
+    <h1> FESTI find </h1>
     <p style="color:yellow;"> @ViewBag.Error</p>
 
     @model ValidateUser
@@ -101,7 +109,7 @@
         </form>
     </div>
     <a href="/"> Go Back </a>
-
+</div>
 </body>
 
 </html>

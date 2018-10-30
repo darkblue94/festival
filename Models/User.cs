@@ -37,6 +37,20 @@ namespace FestiFind.Models
        
         public DateTime updated_at { get; set; }
 
+        [InverseProperty("UserFollowed")]
+        public List<Friends> Followers { get; set; }
+
+        [InverseProperty("Follower")]
+        public List<Friends> UsersFollowed { get; set; }
+
+        public User()
+        {
+            Followers = new List<Friends>();
+            UsersFollowed = new List<Friends>();
+
+        }
+
+
 
 
 

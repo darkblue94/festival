@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            color: rgb(126, 226, 11);
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 11px;
+
+
+        }
+
+        span {
+            color: yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-;
+            font-size: 6px;
+        }
+
+        input {
+            grid: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <td>Name</td>
+            <td>Action</td>
+        </thead>
+        <tbody>
+            @foreach( var com in @ViewBag.u){
+            @if(@Model.UserId == @com.UserId){
+            continue;
+            }else{
+
+            <tr>
+                <td>@com.first_name @com.last_name </td>
+                <td><a href="connect/@com.UserId"> Connect </a></td>
+            </tr>
+            }
+            }
+        </tbody>
+
+
+
+    </table>
+    <a href="dashboard">Home</a>
+</body>
+
+</html>

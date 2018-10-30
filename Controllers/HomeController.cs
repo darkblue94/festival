@@ -122,13 +122,47 @@ namespace FestiFind.Controllers
 
             return View(thisUser);
         }
-
-        public IActionResult Contact()
+        [Route("/logout")]
+        public IActionResult Logout()
         {
-            ViewData["Message"] = "Your contact page.";
+            HttpContext.Session.Clear();
 
-            return View();
+            return View("Index");
         }
+       
+        [Route("/all_users")]
+
+        public IActionResult Users()
+        {
+            int UserId = (int)HttpContext.Session.GetInt32("UserId");
+            User thisUser = _context.user.SingleOrDefault(p => p.User_Id == UserId);
+            List<User> all_users = _context.user.Where(u => u.created_at < DateTime.Now).ToList();
+            ViewBag.u = all_users;
+
+            return View(thisUser);
+        }
+
+        [Route("/connect/{id}")]
+        public IActionResult guest(int id)
+        {
+            int UserId = (int)HttpContext.Session.GetInt32("UserId");
+            User thisUser = _context.user.SingleOrDefault(p => p.User_Id == UserId);
+            User thatUser = _context.user.SingleOrDefault(p => p.User_Id == id);
+
+            Friends new_friends = new Friends();
+            new_friends.FollowerId = UserId;
+            new_friends.UserFollowedId = id;
+            new_friends.Follower = thisUser;
+            new_friends.UserFollowed = thatUser;
+
+            _context.friends.Add(new_friends);
+            _context.SaveChanges();
+
+            return RedirectToAction("About", thisUser);
+        }
+
+
+
 
         public IActionResult Error()
         {
